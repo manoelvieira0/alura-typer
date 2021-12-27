@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Alura Typer</title>
     <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -14,11 +15,17 @@
         <p class="frase center">Quer saber como melhorar a sua velocidade ao digitar? O primeiro passo para aprender a digitar
             rápido e para aumentar a sua velocidade ao digitar é fazer um teste de digitação cronometrado!</p>
         <ul class="informacoes center">
-            <li><span id="tempo-digitacao">10</span> Segundos</li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="tempo-digitacao">10</span> Segundos
+            </li>
         </ul>
 
         <textarea class="campo-digitacao" cols="40" rows="8"></textarea>
-        <button id="botao-reiniciar">Reiniciar Jogo</button>
+
+        <div class="botoes">
+            <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">restore</i></a>
+        </div>
 
         <ul class="center">
             <li><span id="contador-caracteres">0</span> Caracteres</li>

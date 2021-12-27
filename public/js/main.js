@@ -43,5 +43,6 @@ function reiniciaJogo() {
     $('#contador-caracteres').text('0')
     $("#tempo-digitacao").text(tempoInicial)
     inicializaCronometro()
+    campo.removeClass('campo-desativado')
 }
 
