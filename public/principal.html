@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    <h1 class="titulo">Alura Typer</h1>
-    <p class="frase">Quer saber como melhorar a sua velocidade ao digitar? O primeiro passo para aprender a digitar rápido e para aumentar a sua velocidade ao digitar é fazer um teste de digitação cronometrado!</p>
-    <ul class="informacoes">
-        <li><span id="tempo-digitacao">10</span> Segundos</li>
-    </ul>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="frase center">Quer saber como melhorar a sua velocidade ao digitar? O primeiro passo para aprender a digitar
+            rápido e para aumentar a sua velocidade ao digitar é fazer um teste de digitação cronometrado!</p>
+        <ul class="informacoes center">
+            <li><span id="tempo-digitacao">10</span> Segundos</li>
+        </ul>
 
-    <textarea class="campo-digitacao" cols="40" rows="8"></textarea>
-    <button id="botao-reiniciar">Reiniciar Jogo</button>
+        <textarea class="campo-digitacao" cols="40" rows="8"></textarea>
+        <button id="botao-reiniciar">Reiniciar Jogo</button>
 
-    <ul>
-        <li><span id="contador-caracteres">0</span> Caracteres</li>
-        <li><span id="contador-palavras">0</span> Palavras</li>
-    </ul>
-    
+        <ul class="center">
+            <li><span id="contador-caracteres">0</span> Caracteres</li>
+            <li><span id="contador-palavras">0</span> Palavras</li>
+        </ul>
+    </div>
+
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
 
 </body>
+
 </html>

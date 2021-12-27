@@ -1,9 +1,8 @@
 var tempoInicial = $('#tempo-digitacao').text()
 var campo = $('.campo-digitacao')
 
-$(
+$( //Atalho para Document .ready
     function () {
-        console.log('Olá')
         inicializaContadores()
         inicializaCronometro()
         $("#botao-reiniciar").click(reiniciaJogo)
@@ -31,6 +30,7 @@ function inicializaCronometro() {
             if (tempoRestante < 1) {
                 campo.attr('disabled', true)
                 clearInterval(cronometroID)
+                campo.addClass('campo-desativado')
             }
         }, 1000);
     })
